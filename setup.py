@@ -31,7 +31,7 @@ setup(
     packages=find_packages(),
     package_data={
         'roboverse': find_data_files(
-            'roboverse', ['*.xacro', '*.png', '*.urdf', '*.stl', '*.xml']
+            'roboverse', ['*.xacro', '*.png', '*.urdf', '*.stl', '*.xml', "assets/**/*.py", "*.bullet", "metadata.py", "*.obj"]
         )
     },
 )
