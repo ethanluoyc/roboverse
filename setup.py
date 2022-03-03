@@ -29,9 +29,10 @@ def find_data_files(package_dir, patterns, excludes=()):
 setup(
     name='roboverse',
     packages=find_packages(),
+    include_package_data=True,
     package_data={
         'roboverse': find_data_files(
-            'roboverse', ['*.xacro', '*.png', '*.urdf', '*.stl', '*.xml', "assets/**/*.py", "*.bullet", "metadata.py", "*.obj"]
+            'roboverse', ['*.xacro', '*.png', '*.urdf', '*.stl', '*.xml', "assets/**/*.py", "*.bullet", "metadata.py", "*.obj", "*.txt", "*.jpg", "*.mtl", "*.mrl", "*.binvox", "*.json", "*.wrl"]
         )
     },
 )
